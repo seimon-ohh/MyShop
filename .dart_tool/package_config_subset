@@ -34,6 +34,14 @@ fake_async
 2.12
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib/
+http
+2.14
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib/
+http_parser
+2.12
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib/
 intl
 2.12
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/

@@ -1,4 +1,4 @@
-#Wed Jan 05 09:19:46 CET 2022
+#Thu Jan 06 09:06:49 CET 2022
 base.0=/Users/simon/Documents/Programmieren/udemy/Apps Dart_Flutter/MyShop/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
