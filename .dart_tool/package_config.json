@@ -170,11 +170,7 @@
       "languageVersion": "2.11"
     }
   ],
-<<<<<<< HEAD
   "generated": "2022-01-06T08:24:49.006552Z",
-=======
-  "generated": "2022-01-05T00:43:25.973797Z",
->>>>>>> 188b3127bdbccf4af4d8c21503fbffb8764aafb5
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

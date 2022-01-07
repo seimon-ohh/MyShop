@@ -1,7 +1,7 @@
 flutter_complete_guide
 2.11
-file:///Users/simon/Documents/Programmieren/udemy/Apps%20Dart_Flutter/MyShop/MyShop/
-file:///Users/simon/Documents/Programmieren/udemy/Apps%20Dart_Flutter/MyShop/MyShop/lib/
+file:///Users/simon/Documents/Programmieren/udemy/Apps%20Dart_Flutter/MyShop/
+file:///Users/simon/Documents/Programmieren/udemy/Apps%20Dart_Flutter/MyShop/lib/
 async
 2.12
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/
@@ -50,6 +50,10 @@ matcher
 2.12
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib/
+material
+2.12
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/material-1.0.0+2/
+file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/material-1.0.0+2/lib/
 meta
 2.12
 file:///opt/homebrew/Caskroom/flutter/2.8.0/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/
