@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/providers/auth.dart';
 import 'package:flutter_complete_guide/providers/cart.dart';
 import 'package:flutter_complete_guide/providers/product.dart';
 import 'package:flutter_complete_guide/providers/products.dart';
@@ -10,6 +11,7 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final product = Provider.of<Product>(context);
     final cart = Provider.of<Cart>(context, listen: false);
+    final authData = Provider.of<Auth>(context, listen: false);
     return GridTile(
       child: GestureDetector(
         onTap: () {
@@ -20,8 +22,9 @@ class ProductItem extends StatelessWidget {
           //alternativ wrappen mit Consumer<Product> req:builder(ctx, product, child => WIDGET,
           //kann auch dazu verwendet werden um nur einzelne teile des Trees zu rebuilden DannProvider auf listening: false setzten
           borderRadius: BorderRadius.circular(10),
-          child: Image.network(
-            product.imageUrl,
+          child: FadeInImage(
+            placeholder: AssetImage('assets/images/Omnis-Idea.png'),
+            image: NetworkImage(product.imageUrl),
             fit: BoxFit.cover,
           ),
         ),
@@ -37,7 +40,9 @@ class ProductItem extends StatelessWidget {
                 ? Icon(Icons.favorite)
                 : Icon(Icons.favorite_border),
             color: Theme.of(context).accentColor,
-            onPressed: product.toggleFavoriteStatus,
+            onPressed: () {
+              product.toggleFavoriteStatus(authData.token, authData.userId);
+            },
           ),
           trailing: IconButton(
             icon: Icon(Icons.shopping_cart),
