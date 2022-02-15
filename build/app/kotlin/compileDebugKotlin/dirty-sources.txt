@@ -1,1 +1,0 @@
-/Users/simon/Documents/Programmieren/udemy/Apps Dart_Flutter/MyShop/android/app/src/main/kotlin/com/example/shop_app/MainActivity.kt
