@@ -16,8 +16,27 @@ class CustomRoute<T> extends MaterialPageRoute<T> {
     if (settings.name == '/') {
       return child;
     }
-    return FadeTransition(opacity: animation, child: child,
-    return super
-        .buildTransitions(context, animation, secondaryAnimation, child);
+    return FadeTransition(
+      opacity: animation,
+      child: child,
+    );
+  }
+}
+
+class CustomPageTransitionBuilder extends PageTransitionsBuilder {
+  Widget buildTransitions<T>(
+    PageRoute<T> route,
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) {
+    if (route.settings.name == '/') {
+      return child;
+    }
+    return FadeTransition(
+      opacity: animation,
+      child: child,
+    );
   }
 }

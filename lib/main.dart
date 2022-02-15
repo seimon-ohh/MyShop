@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/helpers/custom_route.dart';
 import 'package:flutter_complete_guide/providers/auth.dart';
 import 'package:flutter_complete_guide/providers/cart.dart';
 import 'package:flutter_complete_guide/providers/orders.dart';
@@ -38,10 +39,13 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'MyShop',
           theme: ThemeData(
-            primarySwatch: Colors.grey,
-            accentColor: Colors.red,
-            fontFamily: 'Lato',
-          ),
+              primarySwatch: Colors.grey,
+              accentColor: Colors.red,
+              fontFamily: 'Lato',
+              pageTransitionsTheme: PageTransitionsTheme(builders: {
+                TargetPlatform.android: CustomPageTransitionBuilder(),
+                TargetPlatform.iOS: CustomPageTransitionBuilder()
+              })),
           home: auth.isAuth
               ? ProductsOverviewScreen()
               : FutureBuilder(
