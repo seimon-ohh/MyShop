@@ -22,10 +22,13 @@ class ProductItem extends StatelessWidget {
           //alternativ wrappen mit Consumer<Product> req:builder(ctx, product, child => WIDGET,
           //kann auch dazu verwendet werden um nur einzelne teile des Trees zu rebuilden DannProvider auf listening: false setzten
           borderRadius: BorderRadius.circular(10),
-          child: FadeInImage(
-            placeholder: AssetImage('assets/images/Omnis-Idea.png'),
-            image: NetworkImage(product.imageUrl),
-            fit: BoxFit.cover,
+          child: Hero(
+            tag: product.id,
+            child: FadeInImage(
+              placeholder: AssetImage('assets/images/omnis_idea.png'),
+              image: NetworkImage(product.imageUrl),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
